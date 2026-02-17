@@ -1,0 +1,119 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 1001;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 400px;
+  background: var(--background);
+  z-index: 1002;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.closeBtn {
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.closeBtn:hover {
+  color: var(--foreground);
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 30px;
+}
+
+.empty {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.itemImage {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: var(--secondary);
+  border-radius: 12px;
+}
+
+.itemInfo h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.itemInfo p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.removeBtn {
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.footer {
+  padding: 30px;
+  border-top: 1px solid var(--border);
+  background: var(--background);
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.checkoutBtn {
+  width: 100%;
+  background: var(--accent);
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 400;
+}
